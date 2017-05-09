@@ -16,11 +16,21 @@ class Vehicle():
 
   #implementing inheritance,car is inheriting from vehicle
 
-   class Car(Vehicle):
+class Car(Vehicle):
    		number_of_wheels =4
    		seats =4
+  #implementing polymorphism 
    		def description(self):
    			return "A "  + str(self.year) + " Car model: "+ self.model + " make:" + self.make 
    		def cost():
    			price = self.number_of_wheels*self.number_of_wheels * self.year * 1000
+   			return price
+
+class Truck(Vehicle):
+   		number_of_wheels =8
+   		seats =3
+   		def description(self):
+   			return "A "  + str(self.year) + " Truck model: "+ self.model + " make:" + self.make 
+   		def cost():
+   			price = self.year * 100000 
    			return price
